@@ -7,9 +7,9 @@ const int kNumOfBytes = kNumOfBits / 8;
 const int kNumOfWords = 64 / kNumOfBits;
 const int kNumOfRounds = 64;
 
-std::vector<uint32_t> round_constants = {
+std::vector<uint32_t> round_constants;
     // Round constants (unchanged)
-};
+
 
 uint32_t left_rotate(uint32_t value, int r) {
     return (value << r) | (value >> (32 - r));
